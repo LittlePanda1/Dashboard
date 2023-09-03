@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard QE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="asset/Logo Yamaha.png">
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <div class="icon" > 
+                <img class="head" id="logo-revs" src="asset/Logo Revs.png" alt="Logo Revs">
+                <h1 class="head" id="title">Dashboard Quality</h1>
+                <img class="head" id="logo-yamaha" src="asset/Logo Yamaha.png" alt="Logo Yamaha">
+                </div>
+            <nav class="navigation">
+                <ul>
+                    <li >
+                        <a id="menu" href="#"> <img src="asset/Logo Home.png" alt="Menu Utama"></a> 
+                    </li>
+                    <li>
+                        <a id="attendance" href="#"> <img src="asset/Logo Absen.png" alt="Absensi"> </a>
+                    </li>
+                    <li>
+                        <a id="charts" href="#"> <img src="asset/Logo Grafik.png" alt="Grafik Kelolosan"> </a>
+                    </li>
+                    <li>
+                        <a id="table" href="#"> <img src="asset/Logo Tabel.png" alt="Tabel S-Spri"> </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="home">
+            <div class="container-preview">
+                <div class="attendance-preview">
+                    <!-- Isi dengan konten preview absensi -->
+                    <h2>Preview Absensi</h2>
+                    <p>Isi dengan informasi dan grafik preview absensi karyawan.</p>
+                </div>
+                <div class="chart">
+                    <!-- Isi dengan konten grafik -->
+                    <h2>Grafik Kelolosan</h2>
+                    <p>Isi dengan grafik visualisasi kelolosan karyawan.</p>
+                </div>
+                <div class="table">
+                    <!-- Isi dengan tabel kelolosan -->
+                    <h2>Tabel Kelolosan</h2>
+                    <p>Isi dengan tabel kelolosan karyawan.</p>
+                </div>
+        </section>
+        <section class="attendance-page">
+        <div class="header">
+            <h1>Absensi Karyawan</h1>
+        </div>
+        <div class="container-att">
+            <div class="select-group">
+                <select id="group-selector">
+                    <option value="grup1">Grup 1</option>
+                    <option value="grup2">Grup 2</option>
+                    <option value="non-shift">Non-Shift</option>
+                </select>
+                <div class="button-container">
+                    <button id="edit-button">Edit Karyawan</button>
+                    <button id="add-button">Tambah Karyawan</button>
+                    <button id="delete-button">Hapus Karyawan</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>NPK</th>
+                            <th>Bagian</th>
+                            <th>Hadir/Tidak Hadir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <button class="hadir" onclick="setHadir" style="display: none">Hadir</button>
+                        <button class="tidak-hadir" onclick="setTidakHadir" style="display: none;">Tidak Hadir</button>
+                        <!-- Isi tabel absensi akan ditambahkan di sini -->
+                    </tbody>
+                </table>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "dashboard-qe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pandhu @g.pandhu.a",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jquery": "^3.7.1"
+  },
+  "scripts": {
+    "start": "node js/script.js "
+  },
+  "devDependencies": {},
+  "description": ""
+}

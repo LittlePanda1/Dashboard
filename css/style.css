@@ -1,0 +1,135 @@
+body {
+    background: linear-gradient(to bottom, #003399, #E60000); /* Gradien dari Yamaha Blue ke Yamaha Red */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Font default */
+    color: #FFFFFF,#000000; /* Warna teks putih untuk kontras */
+    background-size: cover; /* Mengisi seluruh laman dengan latar belakang */
+    background-attachment: fixed; /* Menjaga latar belakang tetap di tempat */
+}
+.icon {
+    background-color: #003399; /* Latar merah */
+    color: white; /* Teks putih */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#logo-revs, #logo-yamaha {
+    height: 50px; /* Atur tinggi logo */
+}
+#title {
+    margin: 0;
+    font-size: xx-large;
+    text-align: center;
+}
+.navigation {
+    background-color: #E60000; /* Warna latar belakang */
+    padding: 0px ; /* Padding atas dan bawah */
+}
+.navigation img {
+    width: 40px;
+    height: 40px;
+}
+
+.navigation ul {
+    list-style: none; /* Hapus bullets dari daftar */
+    text-align: center; /* Tengahkan menu horizontal */
+}
+
+.navigation li {
+    display: inline; /* Tampilkan menu secara horizontal */
+    margin-right: 10px; /* Jarak antar menu */
+}
+
+.navigation a {
+    text-decoration: none; /* Hapus garis bawah pada tautan */
+    color: white; /* Warna teks */
+    display: inline-block; /* Mengubah tautan menjadi blok */
+    padding: 10px 20px; /* Padding untuk tautan */
+    transition: background-color 0.3s; /* Animasi perubahan warna latar belakang */
+}
+
+.navigation a:hover {
+    background-color: #FFFFFF; /* Warna latar belakang saat hover */
+}
+.container-preview {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.attendance-preview {
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.chart {
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.table {
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    background: linear-gradient(to bottom, #003399, #E60000);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.table-container {
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+table th {
+    background-color: #f2f2f2;
+}
+.select-group {
+    display: flex;
+    align-items: center;
+}
+select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #003399;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-container button.hadir {
+    background-color: green;
+}
+.button-container button.tidak-hadir {
+    background-color: red;
+}
+.reason-input {
+    display: none;
+}
+.attendance-page {
+    display: none; 
+}
